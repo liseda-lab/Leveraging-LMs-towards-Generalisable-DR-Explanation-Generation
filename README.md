@@ -20,5 +20,50 @@ The datasets used in the experiments are:
 - PrimeKG (https://github.com/mims-harvard/PrimeKG)
 - The "mega graph" datasets were created manually using entity mapping correspondences done using CHEBI (https://www.ebi.ac.uk/chebi/) and DOID (https://disease-ontology.org/)
 
-### Running and replicating experiments
+### Running
 The basic command used to run an experiment will be something like:
+
+```sh
+uv run bash run.sh configs/{dataset}/{task}/{setup}
+```
+
+For example, to train and test a Hetionet model, run:
+
+```sh
+uv run bash run.sh configs/hetionet/drug_repurposing/hetionet_train.sh
+```
+
+And to test a previously trained OREGANO model on Hetionet, run:
+
+```sh
+uv run bash run.sh configs/hetionet/drug_repurposing/oregano_to_hetionet.sh
+```
+
+### Replicating experiments
+To replicate the experiments, simply alter the Experiment parameters part of the config file of the dataset-task-setup combination of your choosing.
+For example, to use the normalised graph, replace the line:
+
+```sh
+graph_file="graph.txt"
+```
+
+With:
+
+
+```sh
+graph_file="graph_normalised.txt"
+```
+
+To use the sigmoid-normalised IC scores, replace the line:
+
+```sh
+IC_file="clustered_IC_classes_edgeType.json"
+```
+
+With:
+
+```sh
+IC_file="clustered_IC_classes_edgeType_sig.json"
+```
+
+Please keep in mind that some combinations of experimental parameters may result in incompatibilities, and as such it is recommended that only the specific combinations of experimental paramteres outlined in the thesis be replicated.
