@@ -1,0 +1,87 @@
+AdG	downregulates
+AeG	expresses
+AscoA	sub class of
+AuG	upregulates
+CbG	binds
+CcSE	causes
+CdG	downregulates
+CdaA	decreases activity
+CdeC	decreases efficacy
+CdeE	decreases effect
+ChaA	has activity
+ChcA	has code
+CheE	has effect
+ChiI	has indication
+ChtT	has target
+CiaA	increases activity
+CiaG	is affecting
+CieC	increases efficacy
+CieE	increases effect
+CpD	palliates
+CrC	resembles
+CseSE	has side effect
+CtD	is substance that treats
+CuG	upregulates
+DUMMY_START_RELATION	DUMMY_START_RELATION
+DaG	associates
+DdG	downregulates
+DhpP	has phenotype
+DlA	localizes
+DpS	presents
+DrD	resembles
+DuG	upregulates
+GawP	acts within
+GcG	covaries
+GccD	causes condition
+GiG	interacts
+GpBP	participates
+GpCC	participates
+GpMF	participates
+GpPW	participates
+Gr>G	regulates
+PAD	PAD
+PCiC	includes
+TgpG	gene product of
+UNK	UNK
+_AdG	is downregulated by
+_AeG	is expressed by
+_AscoA	is super class of
+_AuG	is upregulated by
+_CbG	is bound by
+_CcSE	is caused by
+_CdG	is downregulated by
+_CdaA	has activity decreased by
+_CdeC	has efficacy decreased by
+_CdeE	has effect decreased by
+_ChaA	has activity from
+_ChcA	is code of
+_CheE	has effect from
+_ChiI	is indication of
+_ChtT	is target of
+_CiaA	has activity increased by
+_CiaG	is affected by
+_CieC	has efficacy increased by
+_CieE	has effect increased by
+_CpD	is palliated by
+_CrC	resembles
+_CseSE	is side effect of
+_CtD	is treated by
+_CuG	is upregulated by
+_DaG	is associated by
+_DdG	is downregulated by
+_DhpP	is phenotype of
+_DlA	is localized by
+_DpS	is presented by
+_DrD	resembles
+_DuG	is upregulated by
+_GawP	is acted within by
+_GcG	is covaried by
+_GccD	is condition caused by
+_GiG	is interacted by
+_GpBP	is participated by
+_GpCC	is participated by
+_GpMF	is participated by
+_GpPW	is participated by
+_Gr>G	is regulated by
+_PCiC	is included in
+_TgpG	is gene product of
