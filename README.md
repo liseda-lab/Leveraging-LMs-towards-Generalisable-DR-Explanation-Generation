@@ -1,6 +1,6 @@
 # TO-DO
 - Sort out datasets and embedding folders as they are large file uploads (scp download from cluster or github link)
-- Rename embedding files
+- Rename embedding files to have descriptive names
 
 # Leveraging-LMs-towards-Generalisable-DR-Explanation-Generation
 
