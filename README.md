@@ -14,7 +14,7 @@ The datasets used in the experiments are:
 - Hetionet (https://github.com/hetio/hetionet)
 - OREGANO (https://gitub.u-bordeaux.fr/erias/oregano)
 - PrimeKG (https://github.com/mims-harvard/PrimeKG)
-The "mega graph" datasets were created manually using entity mapping correspondences done using CHEBI (https://www.ebi.ac.uk/chebi/) and DOID (https://disease-ontology.org/)
+- The "mega graph" datasets were created manually using entity mapping correspondences done using CHEBI (https://www.ebi.ac.uk/chebi/) and DOID (https://disease-ontology.org/)
 
 ### Running and replicating experiments
 The basic command used to run an experiment will be something like:
