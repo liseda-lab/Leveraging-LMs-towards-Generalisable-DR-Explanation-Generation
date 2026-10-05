@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+data_input_dir="datasets/hetionet/drug_target/"
+vocab_dir="datasets/hetionet/drug_target/vocab"
+total_iterations=200
+path_length=3
+hidden_size=32
+embedding_size=32
+batch_size=128
+learning_rate=0.0006
+beta=0.05
+num_rollouts=30
+LSTM_layers=2
+base_output_dir="output/hetionet/drug_target/neutral_evaluator/"
+Lambda=0.02
+eval_every=10
+use_entity_embeddings=1
+train_entity_embeddings=0
+train_relation_embeddings=0
+max_num_actions=400
+early_stopping=1
+IC_reward=1
+agentic_ai_enabled=0
+persona_path=None
+load_model=0
+model_load_dir="output/hetionet/drug_repurposing/neutral_evaluator/28-03_12:58:36/model/best_ckpt.json"
+viz_mode=0
