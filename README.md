@@ -72,4 +72,14 @@ With:
 IC_file="clustered_IC_classes_edgeType_sig.json"
 ```
 
+The possible list of parameters is as follows:
+- Graph type
+  - "graph.txt", "graph_normalised.txt"
+- IC type
+  - "clustered_IC_classes_edgeType.json" and "clustered_IC_classes_edgeType_sig.json"
+- Entity embedding type
+  - "entity_embeddings.pt", "entity_embeddings_nbg.pt", "entity_embeddings_icnbg.pt" and "entity_embeddings_mappings.pt"
+- Train and dev files
+  - "{train/dev}.txt" and "{train/dev}{20/50}pct.txt"
+
 Please keep in mind that some combinations of experimental parameters may result in incompatibilities, and as such it is recommended that only the specific combinations of experimental paramteres outlined in the thesis be replicated.
