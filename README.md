@@ -1,5 +1,5 @@
 # TO-DO
-- Sort out large file uploads (scp download from cluster or github link)
+- Sort out datasets and embedding folders as they are large file uploads (scp download from cluster or github link)
 - Rename embedding files
 
 # Leveraging-LMs-towards-Generalisable-DR-Explanation-Generation
