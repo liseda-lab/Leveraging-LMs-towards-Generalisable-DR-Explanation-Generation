@@ -40,6 +40,11 @@ And to test a previously trained OREGANO model on Hetionet, run:
 uv run bash run.sh configs/hetionet/drug_repurposing/oregano_to_hetionet.sh
 ```
 
+After altering the corresponding config file by specifying the file path of the saved model you wish to use:
+```sh
+# Change this line to the path of the model you want to load
+model_load_dir="output/oregano/drug_repurposing/neutral_evaluator/..."
+```
 ### Replicating experiments
 To replicate the experiments, simply alter the Experiment parameters part of the config file of the dataset-task-setup combination of your choosing.
 For example, to use the normalised graph, replace the line:
