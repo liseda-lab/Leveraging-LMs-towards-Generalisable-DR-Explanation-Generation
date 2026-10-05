@@ -2,7 +2,7 @@
 
 Diogo Venes' thesis - Leveraging Language Models towards Generalisable Drug Repurposing Explanation Generation
 
-This repository contains the files and necessary instructions to replicate the experiments outlined in the thesis descibed above.
+This repository contains the files and necessary instructions to replicate the experiments outlined in the thesis described above.
 
 ## Guide to run the system
 
