@@ -46,7 +46,7 @@ After altering the corresponding config file by specifying the file path of the 
 model_load_dir="output/oregano/drug_repurposing/neutral_evaluator//07-08_10:39:51/model/best_ckpt.json"
 ```
 ### Replicating experiments
-To replicate the experiments, simply alter the Experiment parameters part of the config file of the dataset-task-setup combination of your choosing.
+To replicate the experiments, simply alter the ```Experiment parameters``` part of the config file of the dataset-task-setup combination of your choosing.
 For example, to use the normalised graph, replace the line:
 
 ```sh
@@ -74,12 +74,12 @@ IC_file="clustered_IC_classes_edgeType_sig.json"
 
 The possible list of parameters is as follows:
 - Graph type
-  - "graph.txt", "graph_normalised.txt"
+  - ```graph.txt``` and ```graph_normalised.txt```
 - IC type
-  - "clustered_IC_classes_edgeType.json" and "clustered_IC_classes_edgeType_sig.json"
+  - ```clustered_IC_classes_edgeType.json``` and ```clustered_IC_classes_edgeType_sig.json```
 - Entity embedding type
-  - "entity_embeddings.pt", "entity_embeddings_nbg.pt", "entity_embeddings_icnbg.pt" and "entity_embeddings_mappings.pt"
+  - ```entity_embeddings.pt```, ```entity_embeddings_nbg.pt```, ```entity_embeddings_icnbg.pt``` and ```entity_embeddings_mappings.pt```
 - Train and dev files
-  - "{train/dev}.txt" and "{train/dev}{20/50}pct.txt"
+  - ```{train/dev}.txt``` and ```{train/dev}{20/50}pct.txt```
 
 Please keep in mind that some combinations of experimental parameters may result in incompatibilities, and as such it is recommended that only the specific combinations of experimental paramteres outlined in the thesis be replicated.
