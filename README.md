@@ -14,7 +14,7 @@ The datasets used in the experiments are:
 - Hetionet (https://github.com/hetio/hetionet)
 - OREGANO (https://gitub.u-bordeaux.fr/erias/oregano)
 - PrimeKG (https://github.com/mims-harvard/PrimeKG)
-- The "mega graph" datasets were created manually using entity mapping correspondences done using CHEBI (https://www.ebi.ac.uk/chebi/) and DOID (https://disease-ontology.org/)
+- MegaHetionet (MegaH) and MegaOregano (MegaO) both consist of the same graph file, being the merger of the Hetionet and OREGANO graphs. They differ in the train/dev/test files, with MegaH having the original Hetionet pairs and MegaO having the original Oregano pairs. These "mega graph" datasets were created manually using entity mapping correspondences done using CHEBI (https://www.ebi.ac.uk/chebi/) and DOID (https://disease-ontology.org/)
 
 ## Guide to run the system
 
@@ -34,16 +34,16 @@ For example, to train and test a Hetionet model, run:
 uv run bash run.sh configs/hetionet/drug_repurposing/hetionet_train.sh
 ```
 
-And to test a previously trained OREGANO model on Hetionet, run:
+To test a previously trained OREGANO model on Hetionet, run:
 
 ```sh
 uv run bash run.sh configs/hetionet/drug_repurposing/oregano_to_hetionet.sh
 ```
 
-After altering the corresponding config file by specifying the file path of the saved model you wish to use:
+After altering the corresponding config file by specifying the file path of the saved model you wish to use, specifically pointing to the ```best_ckpt.json```:
 ```sh
 # Change this line to the path of the model you want to load
-model_load_dir="output/oregano/drug_repurposing/neutral_evaluator/..."
+model_load_dir="output/oregano/drug_repurposing/neutral_evaluator//07-08_10:39:51/model/best_ckpt.json"
 ```
 ### Replicating experiments
 To replicate the experiments, simply alter the Experiment parameters part of the config file of the dataset-task-setup combination of your choosing.
